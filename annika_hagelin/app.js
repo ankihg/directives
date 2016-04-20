@@ -50,3 +50,16 @@ app.directive('userBrief', function() {
     templateUrl: './templates/user-brief.html'
   };
 });
+
+app.directive('comment', function() {
+  return {
+    restrict: 'E',
+    scope: {
+      user: '=',
+      text: '=',
+      date: '='
+    },
+    replace: true,
+    templateUrl: './templates/comment.html'
+  }
+});
