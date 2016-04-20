@@ -12,3 +12,16 @@ app.directive('game', function() {
     templateUrl: './templates/game.html'
   }
 })
+
+app.directive('userProfile', function() {
+  return {
+    restrict: 'E',
+    scope: {
+      name: '=',
+      dateJoined: '=',
+      games: '='
+    },
+    replace: true,
+    templateUrl: './templates/user-profile.html'
+  }
+})
