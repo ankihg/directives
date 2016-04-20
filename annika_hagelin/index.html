@@ -2,13 +2,20 @@
 <html data-ng-app="app">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./styles/mystyle.css">
   </head>
   <body>
     <section id="games">
       <game title="'squirrel stalk'" creator="'hilda'" tags="['squirrel', 'chew']"></game>
+      <game title="'meow-se munch'" creator="'tad'" tags="['meow', 'vermin']"></game>
+
     </section>
 
     <section id="users">
+      <user-brief name="'hilda'" date-joined="'1-10-16'" games="['squirrel stalk']"></user-profile>
+    </section>
+
+    <section class="plz" id="profile">
       <user-profile name="'hilda'" date-joined="'1-10-16'" games="['squirrel stalk']"></user-profile>
     </section>
 
